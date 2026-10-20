@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EEN442 Erasmus Lab Week at h_da 2026 | SCADA, High Voltage, Protection</title>
+<meta name="description" content="Erasmus lab week for CUT EEN442 Power Systems II students at h_da Darmstadt. Schedule, lab descriptions and downloadable material for the h_da lab week, 19 to 23 October 2026: SCADA, High Voltage Technology and Power System Protection.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%2314213d'/><path d='M18 4 8 18h7l-2 10 11-15h-7z' fill='%23f2a93b'/></svg>">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#schedule">Skip to schedule</a>
+
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="brand" href="#top" aria-label="h_da Lab Week home">
+      <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><rect width="32" height="32" rx="6" fill="currentColor"/><path d="M18 4 8 18h7l-2 10 11-15h-7z" fill="var(--signal)"/></svg>
+      <span>Lab Week <b>h_da</b></span>
+    </a>
+    <nav aria-label="Sections">
+      <a href="#schedule">Schedule</a>
+      <a href="#labs">Labs</a>
+      <a href="#reports">Report</a>
+      <a href="#files">Files</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="kicker mono">Erasmus · CUT EEN442 · Darmstadt · 19 to 23 October 2026</p>
+        <h1>Three labs.<br>Five days.<br><span>One power system.</span></h1>
+        <p class="lede">An Erasmus course for students of EEN442 Power Systems II at the Cyprus University of Technology (CUT), travelling from Limassol to Hochschule Darmstadt (h_da), Faculty of Electrical Engineering and Information Technology, for a hands-on laboratory week. We operate a grid from the control room, break down air gaps at up to 100 kV, and test the relays that keep faults selective.</p>
+        <div class="cta">
+          <a class="btn primary" href="#schedule">See the schedule</a>
+          <a class="btn" href="files/hda-lab-week-2026.ics" download>Add to calendar (.ics)</a>
+        </div>
+      </div>
+      <aside class="status" id="status" aria-live="polite">
+        <p class="mono status-label">Status</p>
+        <p class="status-title" id="status-title">Loading…</p>
+        <p class="status-sub" id="status-sub"></p>
+        <div class="bar" aria-hidden="true"><span id="status-bar"></span></div>
+        <p class="mono status-clock">Darmstadt time <span id="clock">--:--</span></p>
+      </aside>
+    </div>
+  </section>
+
+
+  <section class="about">
+    <div class="wrap about-grid">
+      <div><p class="mono a-k">Programme</p><p class="a-v">Erasmus course</p></div>
+      <div><p class="mono a-k">Home course</p><p class="a-v">EEN442 Power Systems II, CUT</p></div>
+      <div><p class="mono a-k">Route</p><p class="a-v">CUT Limassol <span aria-hidden="true">→</span> h_da Darmstadt</p></div>
+      <div><p class="mono a-k">Hardware lab</p><p class="a-v">Preparation, three labs, report writing</p></div>
+    </div>
+  </section>
+
+  <section id="schedule" class="block">
+    <div class="wrap">
+      <div class="head">
+        <p class="kicker mono">01 · Schedule</p>
+        <h2>The week at a glance</h2>
+        <p class="muted">All times are local Darmstadt time (CEST).</p>
+      </div>
+      <ol class="days" id="days">
+        <li class="day prep" data-start="2026-10-19T09:00:00+02:00" data-end="2026-10-19T12:00:00+02:00">
+          <a href="#schedule">
+            <p class="mono d-date"><span>Mon</span> 19 Oct</p>
+            <p class="mono d-time">09:00 to 12:00</p>
+            <h3>Preparatory session</h3>
+            <p class="tag t-prep">Lab preparation</p>
+          </a>
+        </li>
+        <li class="day" data-start="2026-10-20T09:30:00+02:00" data-end="2026-10-20T13:00:00+02:00">
+          <a href="#lab-scada">
+            <p class="mono d-date"><span>Tue</span> 20 Oct</p>
+            <p class="mono d-time">09:30 to 13:00</p>
+            <h3>SCADA and Power System Operation</h3>
+            <p class="tag t-scada">Lab 1 · Simulator</p>
+          </a>
+        </li>
+        <li class="day" data-start="2026-10-21T09:30:00+02:00" data-end="2026-10-21T13:00:00+02:00">
+          <a href="#lab-hv">
+            <p class="mono d-date"><span>Wed</span> 21 Oct</p>
+            <p class="mono d-time">09:30 to 13:00</p>
+            <h3>High Voltage Technology</h3>
+            <p class="tag t-hv">Lab 2 · Breakdown in air</p>
+          </a>
+        </li>
+        <li class="day" data-start="2026-10-22T09:30:00+02:00" data-end="2026-10-22T13:00:00+02:00">
+          <a href="#lab-prot">
+            <p class="mono d-date"><span>Thu</span> 22 Oct</p>
+            <p class="mono d-time">09:30 to 13:00</p>
+            <h3>Power System Protection</h3>
+            <p class="tag t-prot">Lab 3 · CTs and relays</p>
+          </a>
+        </li>
+        <li class="day report" data-start="2026-10-23T09:00:00+02:00" data-end="2026-10-23T12:00:00+02:00">
+          <a href="#reports">
+            <p class="mono d-date"><span>Fri</span> 23 Oct</p>
+            <p class="mono d-time">09:00 to 12:00</p>
+            <h3>Lab report preparation</h3>
+            <p class="tag t-rep">Groups of 2 · due 1 Nov</p>
+          </a>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="labs" class="block alt">
+    <div class="wrap">
+      <div class="head">
+        <p class="kicker mono">02 · Labs</p>
+        <h2>What each lab is about</h2>
+      </div>
+
+      <article class="lab" id="lab-scada" style="--accent: var(--c-scada)">
+        <div class="lab-side">
+          <p class="mono lab-num">Lab 1</p>
+          <p class="mono lab-when">Tuesday 20 Oct<br>09:30 to 13:00</p>
+          <p class="lab-who">Prof. Dr. Sebastian Weck<br>Lars Weispfenning</p>
+        </div>
+        <div class="lab-body">
+          <h3>SCADA and Power System Operation</h3>
+          <p>You take the seat of the grid operator. On h_da's grid training simulator you work with a real network control system covering 400 kV, 110 kV and 20 kV levels: reading the state overview and load flows, planning switching sequences, and carrying them out by the book. Clear, uniform language matters: information calls, switching calls, and the handover of disposition authorization between the control centre and the work crew on site.</p>
+          <h4>Exercises</h4>
+          <ul class="ex">
+            <li><b>Reading the grid.</b> Network loading, losses and loss cost per hour; P and Q of the Nordost 400 coal plant; loading and losses of the West 400 to Nord 400 line; busbar voltages in West 20.</li>
+            <li><b>Circuit breaker maintenance.</b> Take a line out of service in Mitte 20 following the five safety rules, set work markers, and transfer disposition authorization to the local work responsible.</li>
+            <li><b>Busbar isolation.</b> Move all feeders and the transformer in UW Ost 20 from busbar SS1 to SS2 without interrupting supply.</li>
+            <li><b>Transformer changeover.</b> Parallel TR69 and TR70 in West 20 (voltage difference below 300 V), move the earthing coils, isolate and earth the transformer for maintenance.</li>
+            <li><b>Parallel transformers.</b> Offset tap positions and observe the reactive circulating current.</li>
+          </ul>
+          <p class="note">Extended exercise sets (sessions 1 to 3) add voltage control with on-load tap changers, planned switchovers, regulator faults, earth-fault location, and short circuits in the meshed 400 kV network.</p>
+        </div>
+      </article>
+
+      <article class="lab" id="lab-hv" style="--accent: var(--c-hv)">
+        <div class="lab-side">
+          <p class="mono lab-num">Lab 2</p>
+          <p class="mono lab-when">Wednesday 21 Oct<br>09:30 to 13:00</p>
+          <p class="lab-who">Prof. Dr.-Ing. Thomas Betz</p>
+        </div>
+        <div class="lab-body">
+          <h3>High Voltage Technology: breakdown strength in air</h3>
+          <p>A modular high-voltage kit, a 100 kV test transformer, a 100 pF measuring capacitor and a 50 kΩ series resistor. You build the test circuit yourselves, have your teammates check it, and then raise the voltage until the air gap breaks down. The aim is to see how electrode geometry and voltage polarity shape the field and the breakdown voltage.</p>
+          <h4>Experiments</h4>
+          <ul class="ex">
+            <li><b>Part 1a: AC, different geometries.</b> Breakdown voltage Û<sub>d</sub> versus gap for plate-plate (10 to 60 mm) and point-plate (30 to 150 mm). Compute mean field strength, geometry factor p = (s + r)/r, utilization factor η and maximum field strength, with an equivalent point radius of 0.5 mm.</li>
+            <li><b>Part 1b: Pre-breakdown phenomena.</b> In a darkened room, record glow, streamer and spark inception voltages for a point-point gap of 150 mm.</li>
+            <li><b>Part 2: DC polarity effect.</b> Add rectifier diodes and a 10 nF DC capacitor; measure breakdown and partial discharge inception for positive and negative point-plate configurations and explain the difference.</li>
+          </ul>
+          <p class="note warn"><b>Safety first.</b> Before the experiment your supervisor introduces the earthing equipment. You may only start after the safety briefing and after confirming it with your signature.</p>
+          <p class="note">The lab instructions are in German. The English introduction and Prof. Betz's lecture notes are in the files below.</p>
+        </div>
+      </article>
+
+      <article class="lab" id="lab-prot" style="--accent: var(--c-prot)">
+        <div class="lab-side">
+          <p class="mono lab-num">Lab 3</p>
+          <p class="mono lab-when">Thursday 22 Oct<br>09:30 to 13:00</p>
+          <p class="lab-who">h_da Protection Technology Laboratory</p>
+        </div>
+        <div class="lab-body">
+          <h3>Power System Protection</h3>
+          <p>Protection is only as good as the signals it receives and the settings it is given. This lab follows both: first the current transformer that feeds the relay, then the distance relays that decide which breaker trips.</p>
+          <h4>Current transformers</h4>
+          <ul class="ex">
+            <li>Measure the CT winding resistance and burden impedances with a Thomson bridge.</li>
+            <li>Direct measurement of the composite error to IEC 61869-2 with rated burden, overloading and underloading, including phase displacement from the oscilloscope.</li>
+            <li>Indirect measurement, and the effect of saturation and burden on accuracy.</li>
+          </ul>
+          <h4>Distance protection in a medium-voltage network model</h4>
+          <ul class="ex">
+            <li>Set and test an electromechanical SD 34A distance relay in a radial network.</li>
+            <li>Coordinate a KU relay with the SD 34A.</li>
+            <li>Set and test a digital SIPROTEC 7SA511 on a parallel line and in a ring network.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="reports" class="block">
+    <div class="wrap report-grid">
+      <div class="head">
+        <p class="kicker mono">03 · Report</p>
+        <h2>Lab report, in groups of two</h2>
+        <p class="mono big-time">Writing session: Fri 23 Oct · 09:00 to 12:00</p>
+        <div class="deadline">
+          <p class="mono a-k">Submit on Moodle by</p>
+          <p class="dl-date">Sunday 1 November 2026</p>
+          <p class="dl-sub">One PDF per group of 2 students</p>
+        </div>
+        <a class="btn primary" href="files/EEN442_Lab_Report_Template.docx" download>Download report template (.docx)</a>
+      </div>
+      <div>
+        <p>Friday morning is reserved for writing up the labs together while the measurements are still fresh. Work in groups of two; both students are jointly responsible for the whole report.</p>
+        <h4>Submission</h4>
+        <ul class="check">
+          <li>One submission per group on Moodle (EEN442), uploaded by one group member</li>
+          <li>A single PDF named <span class="mono">EEN442_Lab_Surname1_Surname2.pdf</span></li>
+          <li>Both names and student IDs on the first page</li>
+          <li>Deadline: Sunday 1 November 2026</li>
+        </ul>
+        <h4>What the report contains</h4>
+        <ol class="steps">
+          <li><b>Part 1: High Voltage (max. 3 pages).</b> Setup, AC and DC breakdown tables with E<sub>mean</sub>, p, η and E<sub>max</sub>, breakdown and PD inception curves, analysis of field uniformity and the polarity effect.</li>
+          <li><b>Part 2: Protection (max. 4 pages).</b> CT errors to IEC 61869-2 against accuracy class 1, effect of burden and security factor FS, distance protection test results and selectivity.</li>
+          <li><b>Part 3: SCADA (max. 2 pages).</b> Network readings, two switching sequences with the five safety rules and DA handover, short discussion.</li>
+          <li><b>Appendices.</b> Photographs and raw measurement tables, not counted in the page limits.</li>
+        </ol>
+        <h4>Bring on Friday</h4>
+        <ul class="check">
+          <li>Your filled-in measurement tables and notes from all three labs</li>
+          <li>Any photos of the test setups and simulator screens</li>
+          <li>A laptop with your plotting tool of choice</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="files" class="block alt">
+    <div class="wrap">
+      <div class="head row">
+        <div>
+          <p class="kicker mono">04 · Files</p>
+          <h2>Downloads</h2>
+          <p class="muted">Read the lab instructions before each session.</p>
+        </div>
+        <a class="btn primary" href="files/hda-lab-week-all-files.zip" download>Download all (ZIP)</a>
+      </div>
+      <div class="filters" role="group" aria-label="Filter files by lab">
+        <button class="chip on" data-f="all" aria-pressed="true">All</button>
+        <button class="chip" data-f="scada" aria-pressed="false">SCADA</button>
+        <button class="chip" data-f="hv" aria-pressed="false">High Voltage</button>
+        <button class="chip" data-f="prot" aria-pressed="false">Protection</button>
+        <button class="chip" data-f="rep" aria-pressed="false">Report</button>
+      </div>
+      <ul class="files" id="file-list"></ul>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <p>Erasmus lab week for CUT EEN442 Power Systems II at Hochschule Darmstadt, Faculty EIT. Course material © h_da and the respective authors.</p>
+    <p class="mono"><a href="files/hda-lab-week-2026.ics" download>Calendar (.ics)</a></p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
