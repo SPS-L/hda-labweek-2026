@@ -1,10 +1,6 @@
 const FILES=[
  {lab:'rep',name:'EEN442 lab report template',file:'EEN442_Lab_Report_Template.docx',meta:'Editable Word template · groups of 2 · due Sun 1 Nov 2026',size:'44 KB',ext:'DOCX'},
  {lab:'scada',name:'SCADA lab exercises 1 to 4b',file:'SCADA_Lab_Exercises.pdf',meta:'Grid training simulator worksheet · 13 pages',size:'446 KB'},
- {lab:'scada',name:'Power System Operation lab, session 1',file:'PSO_Lab_Session1_Ex1-5.pdf',meta:'Exercises 1 to 5 · Weck, Weispfenning',size:'902 KB'},
- {lab:'scada',name:'Power System Operation lab, session 2',file:'PSO_Lab_Session2_Ex6-8.pdf',meta:'Exercises 6 to 8',size:'903 KB'},
- {lab:'scada',name:'Power System Operation lab, session 3',file:'PSO_Lab_Session3_Ex9-12.pdf',meta:'Exercises 9 to 12',size:'902 KB'},
- {lab:'scada',name:'Power System Control Technology and Operational Training',file:'PSO_Lecture_Notes_Metz_Graf_2014.pdf',meta:'Lecture notes · Metz, Graf · 112 pages',size:'2.4 MB'},
  {lab:'hv',name:'HV lab instructions: breakdown strength in air',file:'HV_Lab_Breakdown_in_Air_DE.pdf',meta:'In German · Betz · 4 pages',size:'156 KB'},
  {lab:'hv',name:'Lightning impulse testing (English)',file:'HV_Lightning_Impulse_Testing_EN.pdf',meta:'Theory, impulse generator, device under test, measurement · 9 pages',size:'0.9 MB'},
  {lab:'hv',name:'HV lab introduction (English)',file:'HV_Lab_Introduction_EN.pdf',meta:'Overview of concepts and experiments · 2 pages',size:'54 KB'},
