@@ -6,7 +6,7 @@ const FILES=[
  {lab:'scada',name:'Power System Operation lab, session 3',file:'PSO_Lab_Session3_Ex9-12.pdf',meta:'Exercises 9 to 12',size:'902 KB'},
  {lab:'scada',name:'Power System Control Technology and Operational Training',file:'PSO_Lecture_Notes_Metz_Graf_2014.pdf',meta:'Lecture notes · Metz, Graf · 112 pages',size:'2.4 MB'},
  {lab:'hv',name:'HV lab instructions: breakdown strength in air',file:'HV_Lab_Breakdown_in_Air_DE.pdf',meta:'In German · Betz · 4 pages',size:'156 KB'},
- {lab:'hv',name:'HV lab introduction (English)',file:'HV_Lab_Introduction_EN.pdf',meta:'Overview of concepts and experiments · 2 pages',size:'53 KB'},
+ {lab:'hv',name:'HV lab introduction (English)',file:'HV_Lab_Introduction_EN.pdf',meta:'Overview of concepts and experiments · 2 pages',size:'54 KB'},
  {lab:'hv',name:'High Voltage Technology and Electrical Fields',file:'HV_Lecture_Notes_Betz.pdf',meta:'Lecture notes · Betz · 133 pages',size:'5.7 MB'},
  {lab:'prot',name:'Current transformers: lab instructions',file:'Protection_Current_Transformers_EN.pdf',meta:'Saturation and burden · IEC 61869-2 · 10 pages',size:'878 KB'},
  {lab:'prot',name:'Distance protection in MV networks',file:'Protection_Distance_Protection_EN.pdf',meta:'Network model, SD 34A, SIPROTEC 7SA511 · 15 pages',size:'671 KB'}
@@ -27,18 +27,19 @@ document.querySelectorAll('.chip').forEach(c=>c.addEventListener('click',()=>{
   render(c.dataset.f);
 }));
 
-const days=[...document.querySelectorAll('.day')].map(el=>({el,s:new Date(el.dataset.start),e:new Date(el.dataset.end),t:el.querySelector('h3').textContent,time:el.querySelector('.d-time').textContent,date:el.querySelector('.d-date').textContent}));
+const evs=[...document.querySelectorAll('.ev[data-start]')].map(el=>{const day=el.closest('.day').querySelector('.d-date').textContent;return {el,s:new Date(el.dataset.start),e:new Date(el.dataset.end),t:el.querySelector('.ev-title').textContent,time:el.querySelector('.ev-time').textContent,date:day}});
 const fmt=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Berlin',hour:'2-digit',minute:'2-digit'});
 const $=id=>document.getElementById(id);
 function dur(ms){const m=Math.round(ms/60000),d=Math.floor(m/1440),h=Math.floor(m%1440/60),mm=m%60;return d?`${d} d ${h} h`:h?`${h} h ${mm} min`:`${mm} min`}
 function tick(){
   const now=new Date();$('clock').textContent=fmt.format(now);
-  days.forEach(d=>{d.el.classList.toggle('now',now>=d.s&&now<d.e);d.el.classList.toggle('done',now>=d.e)});
-  const cur=days.find(d=>now>=d.s&&now<d.e), next=days.find(d=>now<d.s), st=$('status');
+  document.querySelectorAll('.ev[data-dayend]').forEach(el=>el.classList.toggle('done',now>=new Date(el.dataset.dayend)));
+  evs.forEach(d=>{d.el.classList.toggle('now',now>=d.s&&now<d.e);d.el.classList.toggle('done',now>=d.e)});
+  const cur=evs.find(d=>now>=d.s&&now<d.e), next=evs.find(d=>now<d.s), st=$('status');
   st.classList.toggle('live',!!cur);
+  const prog=evs.filter(d=>now>=d.e).length/evs.length*100;
   if(cur){$('status-title').textContent='Now: '+cur.t;$('status-sub').textContent=`${cur.time} · ends in ${dur(cur.e-now)}`;$('status-bar').style.width=((now-cur.s)/(cur.e-cur.s)*100)+'%'}
-  else if(next){$('status-title').textContent='Next: '+next.t;$('status-sub').textContent=`${next.date}, ${next.time} · starts in ${dur(next.s-now)}`;
-    const first=days[0].s, prog=now<first?0:(days.filter(d=>now>=d.e).length/days.length*100);$('status-bar').style.width=prog+'%'}
+  else if(next){$('status-title').textContent='Next: '+next.t;$('status-sub').textContent=`${next.date}, ${next.time} · starts in ${dur(next.s-now)}`;$('status-bar').style.width=prog+'%'}
   else{$('status-title').textContent='Lab week complete';$('status-sub').textContent='Thank you, and good luck with the reports.';$('status-bar').style.width='100%'}
 }
 tick();setInterval(tick,30000);
