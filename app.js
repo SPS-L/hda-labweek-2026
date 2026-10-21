@@ -1,5 +1,5 @@
 const FILES=[
- {lab:'rep',name:'EEN442 lab report template',file:'EEN442_Lab_Report_Template.docx',meta:'Editable Word template · groups of 2 · due Sun 1 Nov 2026',size:'44 KB',ext:'DOCX'},
+ {lab:'rep',name:'EEN442 lab report template',file:'EEN442_Lab_Report_Template.docx',meta:'Editable Word template · groups of 2 · due Sun 1 Nov 2026',size:'43 KB',ext:'DOCX'},
  {lab:'scada',name:'SCADA lab exercises 1 to 4b',file:'SCADA_Lab_Exercises.pdf',meta:'Grid training simulator worksheet · 13 pages',size:'446 KB'},
  {lab:'hv',name:'Lightning impulse testing (English)',file:'HV_Lightning_Impulse_Testing_EN.pdf',meta:'Theory, impulse generator, device under test, measurement · 9 pages',size:'0.9 MB'},
  {lab:'hv',name:'Tesla transformer and partial discharges (English)',file:'HV_Tesla_and_Partial_Discharges_EN.pdf',meta:'Demonstration and experiment · 7 pages',size:'0.9 MB'},
