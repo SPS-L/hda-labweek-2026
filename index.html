@@ -72,8 +72,8 @@
       <ol class="days" id="days">
         <li class="day social"><p class="mono d-date"><span>Sun</span> 18 Oct</p><ul class="evs"><li class="ev " data-dayend="2026-10-18T19:30:00+02:00"><span class="mono ev-time">Afternoon</span><span class="ev-title">Tour of Darmstadt</span></li><li class="ev " data-start="2026-10-18T19:30:00+02:00" data-end="2026-10-18T22:00:00+02:00"><span class="mono ev-time">19:30</span><span class="ev-title">Welcome dinner at Grohe brewery</span><span class="ev-meta">With Prof. Dr.-Ing. Athanasios Krontiris · Nieder-Ramstädter Str. 3</span></li></ul></li>
         <li class="day "><p class="mono d-date"><span>Mon</span> 19 Oct</p><ul class="evs"><li class="ev " data-start="2026-10-19T09:00:00+02:00" data-end="2026-10-19T12:00:00+02:00"><span class="mono ev-time">09:00 to 12:00</span><span class="ev-title">Preparatory session</span></li><li class="ev " data-dayend="2026-10-20T00:00:00+02:00"><span class="mono ev-time">Afternoon</span><span class="ev-title">Visit to Heidelberg</span></li></ul></li>
-        <li class="day "><p class="mono d-date"><span>Tue</span> 20 Oct</p><ul class="evs"><li class="ev " data-start="2026-10-20T09:30:00+02:00" data-end="2026-10-20T10:30:00+02:00"><span class="mono ev-time">09:30 to 10:30</span><span class="ev-title">Power Electronics Lab presentation</span><span class="ev-meta">With Prof. Dr. Christian Weiner</span></li><li class="ev hv" data-start="2026-10-20T10:30:00+02:00" data-end="2026-10-20T14:00:00+02:00"><span class="mono ev-time">10:30 to 14:00</span><span class="ev-title"><a href="#lab-hv">Lab 1: High Voltage Technology</a></span><span class="ev-meta">Breakdown strength in air</span></li></ul></li>
-        <li class="day "><p class="mono d-date"><span>Wed</span> 21 Oct</p><ul class="evs"><li class="ev scada" data-start="2026-10-21T09:30:00+02:00" data-end="2026-10-21T13:00:00+02:00"><span class="mono ev-time">09:30 to 13:00</span><span class="ev-title"><a href="#lab-scada">Lab 2: SCADA and Power System Operation</a></span><span class="ev-meta">Grid training simulator</span></li></ul></li>
+        <li class="day "><p class="mono d-date"><span>Tue</span> 20 Oct</p><ul class="evs"><li class="ev scada" data-start="2026-10-20T09:30:00+02:00" data-end="2026-10-20T13:00:00+02:00"><span class="mono ev-time">09:30 to 13:00</span><span class="ev-title"><a href="#lab-scada">Lab 1: SCADA and Power System Operation</a></span><span class="ev-meta">Grid training simulator</span></li></ul></li>
+        <li class="day "><p class="mono d-date"><span>Wed</span> 21 Oct</p><ul class="evs"><li class="ev " data-start="2026-10-21T09:30:00+02:00" data-end="2026-10-21T10:30:00+02:00"><span class="mono ev-time">09:30 to 10:30</span><span class="ev-title">Power Electronics Lab presentation</span><span class="ev-meta">With Prof. Dr. Christian Weiner</span></li><li class="ev hv" data-start="2026-10-21T10:30:00+02:00" data-end="2026-10-21T14:00:00+02:00"><span class="mono ev-time">10:30 to 14:00</span><span class="ev-title"><a href="#lab-hv">Lab 2: High Voltage Technology</a></span><span class="ev-meta">Breakdown strength in air</span></li></ul></li>
         <li class="day "><p class="mono d-date"><span>Thu</span> 22 Oct</p><ul class="evs"><li class="ev prot" data-start="2026-10-22T09:30:00+02:00" data-end="2026-10-22T13:00:00+02:00"><span class="mono ev-time">09:30 to 13:00</span><span class="ev-title"><a href="#lab-prot">Lab 3: Power System Protection</a></span><span class="ev-meta">CTs and distance protection</span></li></ul></li>
         <li class="day "><p class="mono d-date"><span>Fri</span> 23 Oct</p><ul class="evs"><li class="ev rep" data-start="2026-10-23T09:00:00+02:00" data-end="2026-10-23T12:00:00+02:00"><span class="mono ev-time">09:00 to 12:00</span><span class="ev-title"><a href="#reports">Lab report preparation</a></span><span class="ev-meta">Groups of 2 · due Sun 1 Nov</span></li></ul></li>
       </ol>
@@ -87,30 +87,10 @@
         <h2>What each lab is about</h2>
       </div>
 
-      <article class="lab" id="lab-hv" style="--accent: var(--c-hv)">
-        <div class="lab-side">
-          <p class="mono lab-num">Lab 1</p>
-          <p class="mono lab-when">Tuesday 20 Oct<br>10:30 to 14:00</p>
-          <p class="lab-who">Prof. Dr.-Ing. Thomas Betz</p>
-        </div>
-        <div class="lab-body">
-          <h3>High Voltage Technology: breakdown strength in air</h3>
-          <p>A modular high-voltage kit, a 100 kV test transformer, a 100 pF measuring capacitor and a 50 kΩ series resistor. You build the test circuit yourselves, have your teammates check it, and then raise the voltage until the air gap breaks down. The aim is to see how electrode geometry and voltage polarity shape the field and the breakdown voltage.</p>
-          <h4>Experiments</h4>
-          <ul class="ex">
-            <li><b>Part 1a: AC, different geometries.</b> Breakdown voltage Û<sub>d</sub> versus gap for plate-plate (10 to 60 mm) and point-plate (30 to 150 mm). Compute mean field strength, geometry factor p = (s + r)/r, utilization factor η and maximum field strength, with an equivalent point radius of 0.5 mm.</li>
-            <li><b>Part 1b: Pre-breakdown phenomena.</b> In a darkened room, record glow, streamer and spark inception voltages for a point-point gap of 150 mm.</li>
-            <li><b>Part 2: DC polarity effect.</b> Add rectifier diodes and a 10 nF DC capacitor; measure breakdown and partial discharge inception for positive and negative point-plate configurations and explain the difference.</li>
-          </ul>
-          <p class="note warn"><b>Safety first.</b> Before the experiment your supervisor introduces the earthing equipment. You may only start after the safety briefing and after confirming it with your signature.</p>
-          <p class="note">The lab instructions are in German. The English introduction and Prof. Betz's lecture notes are in the files below.</p>
-        </div>
-      </article>
-
       <article class="lab" id="lab-scada" style="--accent: var(--c-scada)">
         <div class="lab-side">
-          <p class="mono lab-num">Lab 2</p>
-          <p class="mono lab-when">Wednesday 21 Oct<br>09:30 to 13:00</p>
+          <p class="mono lab-num">Lab 1</p>
+          <p class="mono lab-when">Tuesday 20 Oct<br>09:30 to 13:00</p>
           <p class="lab-who">Prof. Dr. Sebastian Weck<br>Lars Weispfenning</p>
         </div>
         <div class="lab-body">
@@ -125,6 +105,26 @@
             <li><b>Parallel transformers.</b> Offset tap positions and observe the reactive circulating current.</li>
           </ul>
           <p class="note">Extended exercise sets (sessions 1 to 3) add voltage control with on-load tap changers, planned switchovers, regulator faults, earth-fault location, and short circuits in the meshed 400 kV network.</p>
+        </div>
+      </article>
+
+      <article class="lab" id="lab-hv" style="--accent: var(--c-hv)">
+        <div class="lab-side">
+          <p class="mono lab-num">Lab 2</p>
+          <p class="mono lab-when">Wednesday 21 Oct<br>10:30 to 14:00</p>
+          <p class="lab-who">Prof. Dr.-Ing. Thomas Betz</p>
+        </div>
+        <div class="lab-body">
+          <h3>High Voltage Technology: breakdown strength in air</h3>
+          <p>A modular high-voltage kit, a 100 kV test transformer, a 100 pF measuring capacitor and a 50 kΩ series resistor. You build the test circuit yourselves, have your teammates check it, and then raise the voltage until the air gap breaks down. The aim is to see how electrode geometry and voltage polarity shape the field and the breakdown voltage.</p>
+          <h4>Experiments</h4>
+          <ul class="ex">
+            <li><b>Part 1a: AC, different geometries.</b> Breakdown voltage Û<sub>d</sub> versus gap for plate-plate (10 to 60 mm) and point-plate (30 to 150 mm). Compute mean field strength, geometry factor p = (s + r)/r, utilization factor η and maximum field strength, with an equivalent point radius of 0.5 mm.</li>
+            <li><b>Part 1b: Pre-breakdown phenomena.</b> In a darkened room, record glow, streamer and spark inception voltages for a point-point gap of 150 mm.</li>
+            <li><b>Part 2: DC polarity effect.</b> Add rectifier diodes and a 10 nF DC capacitor; measure breakdown and partial discharge inception for positive and negative point-plate configurations and explain the difference.</li>
+          </ul>
+          <p class="note warn"><b>Safety first.</b> Before the experiment your supervisor introduces the earthing equipment. You may only start after the safety briefing and after confirming it with your signature.</p>
+          <p class="note">The lab instructions are in German. The English introduction and Prof. Betz's lecture notes are in the files below.</p>
         </div>
       </article>
 
