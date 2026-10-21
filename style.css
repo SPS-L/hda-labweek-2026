@@ -163,3 +163,5 @@ h1 span{color:var(--signal-ink)}
 .ev.done{opacity:.55}
 .ev-title a{display:inline;height:auto;padding:0;background:none;border:0;border-radius:0;box-shadow:none;transform:none!important;color:inherit}
 .ev-title a:hover{border:0;box-shadow:none}
+.lab-who .a-k{color:var(--accent);font-size:11px}
+.lab-who{line-height:1.5}
