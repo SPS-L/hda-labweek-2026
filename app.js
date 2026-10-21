@@ -3,6 +3,7 @@ const FILES=[
  {lab:'scada',name:'SCADA lab exercises 1 to 4b',file:'SCADA_Lab_Exercises.pdf',meta:'Grid training simulator worksheet · 13 pages',size:'446 KB'},
  {lab:'hv',name:'HV lab instructions: breakdown strength in air',file:'HV_Lab_Breakdown_in_Air_DE.pdf',meta:'In German · Betz · 4 pages',size:'156 KB'},
  {lab:'hv',name:'Lightning impulse testing (English)',file:'HV_Lightning_Impulse_Testing_EN.pdf',meta:'Theory, impulse generator, device under test, measurement · 9 pages',size:'0.9 MB'},
+ {lab:'hv',name:'Tesla transformer and partial discharges (English)',file:'HV_Tesla_and_Partial_Discharges_EN.pdf',meta:'Demonstration and experiment · 7 pages',size:'0.9 MB'},
  {lab:'hv',name:'HV lab introduction (English)',file:'HV_Lab_Introduction_EN.pdf',meta:'Overview of concepts and experiments · 2 pages',size:'54 KB'},
  {lab:'hv',name:'High Voltage Technology and Electrical Fields',file:'HV_Lecture_Notes_Betz.pdf',meta:'Lecture notes · Betz · 133 pages',size:'5.7 MB'},
  {lab:'prot',name:'Current transformers: lab instructions',file:'Protection_Current_Transformers_EN.pdf',meta:'Saturation and burden · IEC 61869-2 · 10 pages',size:'878 KB'},
