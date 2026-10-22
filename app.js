@@ -4,6 +4,7 @@ const FILES=[
  {lab:'hv',name:'Lightning impulse testing (English)',file:'HV_Lightning_Impulse_Testing_EN.pdf',meta:'Theory, impulse generator, device under test, measurement · 9 pages',size:'0.9 MB'},
  {lab:'hv',name:'Tesla transformer and partial discharges (English)',file:'HV_Tesla_and_Partial_Discharges_EN.pdf',meta:'Demonstration and experiment · 7 pages',size:'0.9 MB'},
  {lab:'hv',name:'HV lab introduction (English)',file:'HV_Lab_Introduction_EN.pdf',meta:'Overview of concepts and programme · 2 pages',size:'48 KB'},
+ {lab:'prot',name:'Current transformers: theory supplement (English)',file:'Protection_CT_Theory_Supplement_EN.pdf',meta:'Errors, burden, saturation, Thomson bridge, test methods · 11 pages',size:'811 KB'},
  {lab:'prot',name:'Current transformers: lab instructions',file:'Protection_Current_Transformers_EN.pdf',meta:'Saturation and burden · IEC 61869-2 · 10 pages',size:'878 KB'},
  {lab:'prot',name:'Distance protection in MV networks',file:'Protection_Distance_Protection_EN.pdf',meta:'Network model, SD 34A, SIPROTEC 7SA511 · 15 pages',size:'671 KB'}
 ];
